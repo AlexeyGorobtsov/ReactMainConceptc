@@ -21,6 +21,17 @@ import {Welcomedialog} from './components/WelcomeDialog/Welcomdialog';
 import {MainApp} from "./components/MainApp/MainApp";
 import {WelcomeDialogSpecialization} from "./components/WelcomeDialogSpecialization";
 import {SignUpDialog} from "./components/SignUpDialog";
+import {FilterableProductTable} from "./components/FilterableProductTable";
+import {CustomTextInput} from "./components/CustomTextInput";
+import {Parent} from "./components/Parent";
+import {OuterClickExample} from "./components/OuterClickExample";
+import {BlurExample} from "./components/BlurExample";
+import {Toolbar} from "./components/Toolbar";
+import {App} from "./components/App";
+import {AppCont} from "./components/Context/AppCont";
+import {AppD} from "./components/Context/dynamic/AppD";
+import {ErrorBoundary} from "./components/ErrorBoundaries/ErrorBoundary";
+import {MyComponent} from "./components/ErrorBoundaries/MyComponent";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -55,6 +66,14 @@ const posts = [
     {id: 1, title: 'Hello World', content: 'Welcom to learning React!'},
     {id: 2, title: 'Installation', content: 'You can install React from npm.'}
 ];
+const PRODUCTS = [
+    {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+    {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Basketball'},
+    {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+    {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+    {category: 'Electronics', price: '$3999.99', stocked: false, name: 'iPone 5'},
+    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+]
 function tick() {
     const element = (
         <div>
@@ -85,6 +104,16 @@ function tick() {
             <MainApp/>
             <WelcomeDialogSpecialization/>
             <SignUpDialog/>
+            <FilterableProductTable products={PRODUCTS}/>
+            <CustomTextInput/>
+            <Parent/>
+            <OuterClickExample/>
+            <BlurExample/>
+            <App />
+            <AppCont />
+            <AppD/>
+            <ErrorBoundary/>
+            <MyComponent/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));

@@ -33,5 +33,4 @@ export class SignUpDialog extends React.Component {
             </Dialog>
         )
     }
-
 }
