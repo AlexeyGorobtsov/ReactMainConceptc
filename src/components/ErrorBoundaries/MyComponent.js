@@ -11,7 +11,6 @@ export class MyComponent extends React.Component {
         try {
             throw new Error('I crashed')
         } catch (error) {
-            console.log(this)
             this.setState({error})
         }
     }

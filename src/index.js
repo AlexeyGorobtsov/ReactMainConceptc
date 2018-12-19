@@ -32,6 +32,14 @@ import {AppCont} from "./components/Context/AppCont";
 import {AppD} from "./components/Context/dynamic/AppD";
 import {ErrorBoundary} from "./components/ErrorBoundaries/ErrorBoundary";
 import {MyComponent} from "./components/ErrorBoundaries/MyComponent";
+import FancyButton from "./components/ForwardingRefs/logProps";
+import {MyComponentR} from "./components/ForwardingRefs/MyComponentR";
+import {CustomTextInputR} from "./components/ForwardingRefs/CustomTextInputR";
+import {CustomTextInput2} from "./components/ForwardingRefs/CustomTextInput2";
+import {CustomTextInputCallBack} from "./components/ForwardingRefs/CustomTextInputCallBack";
+import {CustomTextInputForward} from "./components/ForwardingRefs/CustomTextInputForward";
+import {CustomTextInputHOC} from "./components/ForwardingRefs/CustomTextInputHOC";
+import {Table} from "./components/Fragments/Table";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -60,6 +68,7 @@ const comment = {
 //     </h1>
 // );
 
+const ref = React.createRef();
 const messages = ['React', 'Re: React', 'Re: Re: React'];
 const numbers = [1, 2, 3, 4, 5];
 const posts = [
@@ -114,6 +123,14 @@ function tick() {
             <AppD/>
             <ErrorBoundary/>
             <MyComponent/>
+            {/*<FancyButton ref={ref}>Click me!</FancyButton>*/}
+            <MyComponentR/>
+            <CustomTextInputR/>
+            <CustomTextInput2/>
+            <CustomTextInputCallBack/>
+            <CustomTextInputForward/>
+            <CustomTextInputHOC/>
+            <Table/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
