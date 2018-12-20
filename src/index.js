@@ -41,6 +41,8 @@ import {CustomTextInputForward} from "./components/ForwardingRefs/CustomTextInpu
 import {CustomTextInputHOC} from "./components/ForwardingRefs/CustomTextInputHOC";
 import {Table} from "./components/Fragments/Table";
 import {TransformHOC} from "./components/HigherOrderComponents/TransformHOC.js";
+import {Example} from "./components/IntegrationWithOhterLibraries/Example";
+import {Button} from "./components/IntegrationWithOhterLibraries/Button";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -133,6 +135,7 @@ function tick() {
             <CustomTextInputHOC/>
             <Table/>
             <TransformHOC>Whatever</TransformHOC>
+            <Example/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
