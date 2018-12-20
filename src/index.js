@@ -43,6 +43,11 @@ import {Table} from "./components/Fragments/Table";
 import {TransformHOC} from "./components/HigherOrderComponents/TransformHOC.js";
 import {Example} from "./components/IntegrationWithOhterLibraries/Example";
 import {Button} from "./components/IntegrationWithOhterLibraries/Button";
+import {BlueDatePicker} from "./components/JSXInDepth/BlueDataPicker";
+import {NumberDescription} from "./components/JSXInDepth/NumberDescriber";
+import {App1, App2} from "./components/JSXInDepth/App1";
+import {App3} from "./components/JSXInDepth/Button";
+import {TodoList} from "./components/JSXInDepth/TodoList";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -136,6 +141,12 @@ function tick() {
             <Table/>
             <TransformHOC>Whatever</TransformHOC>
             <Example/>
+            <BlueDatePicker/>
+            <NumberDescription number={4}/>
+            <App1/>
+            <App2/>
+            <App3/>
+            <TodoList/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
