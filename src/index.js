@@ -51,6 +51,8 @@ import {TodoList} from "./components/JSXInDepth/TodoList";
 import {CounterButton} from "./components/OptimizingPerformance/CounterButton";
 import {CounterButtonPC} from "./components/OptimizingPerformance/CounterButtonPC";
 import {WordAdder} from "./components/OptimizingPerformance/WordAdder";
+import {AppPortal} from "./components/Portal/AppPortal";
+import {ParentPortal} from "./components/Portal/ParentPortal";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -153,6 +155,8 @@ function tick() {
             <CounterButton/>
             <CounterButtonPC/>
             <WordAdder/>
+            <AppPortal/>
+            <ParentPortal/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));

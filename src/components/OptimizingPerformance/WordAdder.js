@@ -11,9 +11,6 @@ export class WordAdder extends React.Component {
     }
 
     handleClick() {
-        // this.setState(state => ({
-        //     words: state.words.concat(['marklar'])
-        // }))
         this.setState(state => ({
             words: [...state.words, 'marklar']
         }))
