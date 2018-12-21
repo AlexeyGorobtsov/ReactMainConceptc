@@ -48,6 +48,9 @@ import {NumberDescription} from "./components/JSXInDepth/NumberDescriber";
 import {App1, App2} from "./components/JSXInDepth/App1";
 import {App3} from "./components/JSXInDepth/Button";
 import {TodoList} from "./components/JSXInDepth/TodoList";
+import {CounterButton} from "./components/OptimizingPerformance/CounterButton";
+import {CounterButtonPC} from "./components/OptimizingPerformance/CounterButtonPC";
+import {WordAdder} from "./components/OptimizingPerformance/WordAdder";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -147,6 +150,9 @@ function tick() {
             <App2/>
             <App3/>
             <TodoList/>
+            <CounterButton/>
+            <CounterButtonPC/>
+            <WordAdder/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
