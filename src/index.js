@@ -54,6 +54,10 @@ import {WordAdder} from "./components/OptimizingPerformance/WordAdder";
 import {AppPortal} from "./components/Portal/AppPortal";
 import {ParentPortal} from "./components/Portal/ParentPortal";
 import {ToDoList} from "./components/Reconciliation/ToDoList";
+import {AutoFocusTextInput} from "./components/Refs/AutoFocusTextInput";
+import {CustomTextInputRef} from "./components/Refs/CustomTextInputRef";
+import {CustomTextInputFunc} from "./components/Refs/CustomTextInputFunc";
+import {CustomTextInputCallback} from "./components/Refs/CustomTextInputCallback";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -159,6 +163,10 @@ function tick() {
             <AppPortal/>
             <ParentPortal/>
             <ToDoList/>
+            <AutoFocusTextInput/>
+            <CustomTextInputRef/>
+            <CustomTextInputFunc/>
+            <CustomTextInputCallback/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
