@@ -61,6 +61,8 @@ import {CustomTextInputCallback} from "./components/Refs/CustomTextInputCallback
 import {MouseTracker} from "./components/RenderProps/MouseTracker";
 import {NewComp} from "./components/RenderProps/MouseTrackerHOC";
 import {MouseTrackerPure} from "./components/RenderProps/MouseTrackerPure";
+import {NameFormUC} from "./components/UncontrolledComponent/NameFormUC";
+import {FileInputUC} from "./components/UncontrolledComponent/FileInputUC";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -172,6 +174,8 @@ function tick() {
             <CustomTextInputCallback/>
             {/*<MouseTracker />*/}
             <NewComp />
+            <NameFormUC/>
+            <FileInputUC/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
