@@ -58,6 +58,9 @@ import {AutoFocusTextInput} from "./components/Refs/AutoFocusTextInput";
 import {CustomTextInputRef} from "./components/Refs/CustomTextInputRef";
 import {CustomTextInputFunc} from "./components/Refs/CustomTextInputFunc";
 import {CustomTextInputCallback} from "./components/Refs/CustomTextInputCallback";
+import {MouseTracker} from "./components/RenderProps/MouseTracker";
+import {NewComp} from "./components/RenderProps/MouseTrackerHOC";
+import {MouseTrackerPure} from "./components/RenderProps/MouseTrackerPure";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -167,6 +170,8 @@ function tick() {
             <CustomTextInputRef/>
             <CustomTextInputFunc/>
             <CustomTextInputCallback/>
+            {/*<MouseTracker />*/}
+            <NewComp />
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
