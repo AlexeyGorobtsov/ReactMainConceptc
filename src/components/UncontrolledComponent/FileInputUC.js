@@ -12,7 +12,6 @@ export class FileInputUC extends React.Component {
         console.log(`Selected file - ${
             this.fileInput.current.files[0].name
             }`)
-
     }
 
     render() {

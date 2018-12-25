@@ -63,6 +63,7 @@ import {NewComp} from "./components/RenderProps/MouseTrackerHOC";
 import {MouseTrackerPure} from "./components/RenderProps/MouseTrackerPure";
 import {NameFormUC} from "./components/UncontrolledComponent/NameFormUC";
 import {FileInputUC} from "./components/UncontrolledComponent/FileInputUC";
+import {MyComponentAJAX} from "./components/AJAX/MyComponentAJAX";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -176,6 +177,7 @@ function tick() {
             <NewComp />
             <NameFormUC/>
             <FileInputUC/>
+            <MyComponentAJAX/>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
