@@ -64,6 +64,7 @@ import {MouseTrackerPure} from "./components/RenderProps/MouseTrackerPure";
 import {NameFormUC} from "./components/UncontrolledComponent/NameFormUC";
 import {FileInputUC} from "./components/UncontrolledComponent/FileInputUC";
 import {MyComponentAJAX} from "./components/AJAX/MyComponentAJAX";
+import {testRenderer} from "./components/TestRender/LinkTR";
 
 const name = 'Josh Perez';
 // const element = <h1>Hello, {name}</h1>;
@@ -106,7 +107,8 @@ const PRODUCTS = [
     {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
     {category: 'Electronics', price: '$3999.99', stocked: false, name: 'iPone 5'},
     {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-]
+];
+
 function tick() {
     const element = (
         <div>
